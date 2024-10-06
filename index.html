@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV to Generate Blog Posts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Upload your CSV to generate blog posts</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="six columns">
+                    <label for="context">Context</label>
+                    <input class="u-full-width" type="text" placeholder="Enter context here..." id="context" name="context" required>
+                </div>
+                <div class="six columns">
+                    <label for="cta">Call to Action</label>
+                    <input class="u-full-width" type="text" placeholder="Enter call to action here..." id="cta" name="cta" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="file">CSV File</label>
+                    <input class="u-full-width" type="file" id="file" name="file" accept=".csv" required>
+                </div>
+            </div>
+            <button type="submit" class="button-primary">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
