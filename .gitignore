@@ -2,3 +2,4 @@ results/
 vendor/
 config.php
 uploads/
+composer.lock
